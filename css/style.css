@@ -1129,12 +1129,17 @@
 		padding: 14em 0 14em 0;
 		cursor: default;
 	}
+
+	#header #logo {
+		width: 80%;
+	}
 		#header span { color: #009ae2 }
 
 		#header span#two { color: #f99621 }
 		#header span#zero { color: #ffdf00 }
 		#header span#one { color: #82c13f }
 		#header span#four { color: #0072bb }
+		
 		#header header
 		{
 			display: inline-block;
