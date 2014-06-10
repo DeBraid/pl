@@ -14,7 +14,7 @@
 
 	body
 	{
-		background: #183026 url('../images/bg.jpg') no-repeat;
+		background: #183026 url('../images/mainbg.jpg') no-repeat;
 		background-size: cover;
 		background-position: center 0;
 		background-attachment: fixed;
@@ -1122,7 +1122,7 @@
 	#header
 	{
 		position: relative;
-		color: #fff;
+		color: #752B80;
 		text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
 		text-align: center;
 		margin: 0;
@@ -1133,7 +1133,9 @@
 		#header header
 		{
 			display: inline-block;
-			padding: 0 0 4.5em 0;
+			padding: 1.0em 1.0em 2.5em 1.0em;
+			background-color: white;
+			border-radius: 50px;
 		}
 		
 			#header header h1
@@ -1166,7 +1168,7 @@
 		#header footer
 		{
 			position: absolute;
-			bottom: 9em;
+			/*bottom: 9em;*/
 			margin: 0;
 			width: 100%;
 		}
