@@ -1122,14 +1122,19 @@
 	#header
 	{
 		position: relative;
-		color: #752B80;
+		color: #252175;
 		text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
 		text-align: center;
 		margin: 0;
 		padding: 14em 0 14em 0;
 		cursor: default;
 	}
-	
+		#header span { color: #009ae2 }
+
+		#header span#two { color: #f99621 }
+		#header span#zero { color: #ffdf00 }
+		#header span#one { color: #82c13f }
+		#header span#four { color: #0072bb }
 		#header header
 		{
 			display: inline-block;
