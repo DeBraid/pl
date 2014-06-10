@@ -2,7 +2,6 @@
 
       // Menu settings
       $('#menuToggle, .menu-close').on('click', function(){
-        console.log("booooyahhh");
         $('#menuToggle').toggleClass('active');
         $('body').toggleClass('body-push-toleft');
         $('#theMenu').toggleClass('menu-open');

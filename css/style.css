@@ -1498,7 +1498,7 @@
 	height: 100%;
 }
 
-.menu h1.logo a {
+.menu h1.menu-logo a {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
@@ -1509,11 +1509,11 @@
 	margin-top: 20px;
 }
 
-.menu h1.logo a:hover {
+.menu h1.menu-logo a:hover {
 	color: #f85c37;
 }
 
-.menu img.logo {
+.menu img.menu-logo {
 	margin: 20px 0;
 	max-width: 160px;
 }
