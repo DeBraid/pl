@@ -54,9 +54,53 @@
 		<!-- Banner -->
 			<section id="banner">
 				<header>
-					<h2>This Section is for Ballons</h2>
+					<h2>Search Pioneer Line 2014 Catalogue</h2>
 				</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, accusamus quam exercitationem voluptatibus laudantium doloribus minima praesentium suscipit aliquam unde facere eius saepe et consectetur distinctio dolorem totam illum nulla.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+				<!-- ANGULAR Sorting Table -->
+				<div ng-app>
+				    <span class="bold">Filtering</span>
+				    <br /><br />
+				        <div ng-controller="CatalogueCtrl">        
+				            <div>Sort by: 
+				            <select ng-model="sortExpression">
+									<option value="Name">Name</option>
+									<option value="Price">Price</option>
+									<option value="Quantity">Quantity</option>
+								</select>
+				            </div>
+							<br />
+							<div><strong>Filter Results</strong></div>
+							<table>
+								<tr>
+									<td>Search name, price or quanity: </td>
+									<td><input type="text" ng-model="search.$" /></td>
+								</tr>
+							</table>
+				            <br />
+				            <table border="1">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Price</th>
+										<th>Quantity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="item in items | orderBy:mySortFunction | filter:search">
+										<td>{{item.Name}}</td>
+										<td>{{item.Price | currency}}</td>
+										<td>{{item.Quantity}}</td>
+									</tr>
+								</tbody>
+							</table>
+							<br />
+				</div>
+				</div> <!-- ANGULAR Sorting Table --> 
+
+
+
 				<footer>
 					<a href="#first" class="button style2 scrolly">Act on this message</a>
 				</footer>
@@ -303,14 +347,16 @@
 			</ul>
 			<div class="copyright">
 				<ul class="footer-menu">
-					<li>&copy; Untitled. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
+					<li>All rights reserved.</li>
+					<li>Web App by <a href="http://cacheflow.ca">cacheflow.ca</a></li>
 				</ul>
 			</div>
 		</section>
 
-
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
 		<script src="js/smoothscroll.js"></script>
 		<script src="js/menu.js"></script>
+		<script src="js/cataApp.js"></script>
+
 	</body>
 </html>
