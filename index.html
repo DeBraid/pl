@@ -24,11 +24,11 @@
 	<!-- Menu -->
 	<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
-			<h1 class="logo"><a href="index.html#home">Minimal</a></h1>
+			<h1 class="logo"><a href="#">MENU</a></h1>
 			<i class="icon-remove menu-close"></i>
-			<a href="#home" class="smoothScroll">Home</a>
-			<a href="#about" class="smoothScroll">About</a>
-			<a href="#portfolio" class="smoothScroll">Portfolio</a>
+			<a href="#header" class="smoothScroll">Home</a>
+			<a href="#banner" class="smoothScroll">Search Catalogue</a>
+			<a href="#portfolio" class="smoothScroll">More...</a>
 			<a href="#contact" class="smoothScroll">Contact</a>
 			<a href="#"><i class="icon-facebook"></i></a>
 			<a href="#"><i class="icon-twitter"></i></a>
@@ -56,12 +56,9 @@
 				<header>
 					<h2>Search Pioneer Line 2014 Catalogue</h2>
 				</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
 				<!-- ANGULAR Sorting Table -->
-				<div ng-app>
-				    <span class="bold">Filtering</span>
-				    <br /><br />
+				<div class="table-wrapper" ng-app>
 				        <div ng-controller="CatalogueCtrl">        
 				            <div>Sort by: 
 				            <select ng-model="sortExpression">
@@ -72,7 +69,8 @@
 				            </div>
 							<br />
 							<div><strong>Filter Results</strong></div>
-							<table>
+						
+						<table class="default">
 								<tr>
 									<td>Search name, price or quanity: </td>
 									<td><input type="text" ng-model="search.$" /></td>
@@ -119,7 +117,7 @@
 			</article>
 		
 		<!-- Feature 2 -->
-			<article class="container box style1 left">
+			<article id="portfolio" class="container box style1 left">
 				<a href="http://ineedchemicalx.deviantart.com/art/Kingdom-of-the-Wind-348268044" class="image full"><img src="images/pic02.jpg" alt="" /></a>
 				<div class="inner">
 					<header>
@@ -156,8 +154,8 @@
 		<!-- Contact -->
 			<article id="contact" class="container box style3">
 				<header>
-					<h2>Nisl sed ultricies</h2>
-					<p>Diam dignissim lectus eu ornare volutpat orci.</p>
+					<h2>Contact Us</h2>
+					<p>We can help arrange your orders and provide custom designs.</p>
 				</header>
 				<form>
 					<div class="row half">
