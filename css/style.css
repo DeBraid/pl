@@ -480,7 +480,7 @@
 
 				.button.style2:hover
 				{
-					background: rgba(255,255,255,0.1);
+					background: #35b88f;
 					color: #fff !important;
 					text-shadow: 0 0 0.5px rgba(255,255,255,0.25) !important;
 				}
@@ -1640,4 +1640,10 @@
 		-ms-transition: all .1s ease-in-out;
 		 -o-transition: all .1s ease-in-out;
 			transition: all .1s ease-in-out;
+}
+
+@media all and (max-width: 641px) {
+    .btn-group {
+        display: none !important;
+    }
 }
